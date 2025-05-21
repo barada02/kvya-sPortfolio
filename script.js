@@ -86,6 +86,24 @@ function initProjectFilters() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
     
+    // Special animation for cricket category
+    const cricketButton = document.querySelector('.filter-btn[data-filter="cricket"]');
+    if (cricketButton) {
+        cricketButton.style.position = 'relative';
+        cricketButton.style.overflow = 'hidden';
+        
+        // Add cricket bat icon
+        const batIcon = document.createElement('span');
+        batIcon.innerHTML = '🏏';
+        batIcon.style.position = 'absolute';
+        batIcon.style.fontSize = '14px';
+        batIcon.style.right = '5px';
+        batIcon.style.top = '50%';
+        batIcon.style.transform = 'translateY(-50%)';
+        batIcon.style.opacity = '0.7';
+        cricketButton.appendChild(batIcon);
+    }
+    
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
             // Set active button
@@ -93,6 +111,13 @@ function initProjectFilters() {
             this.classList.add('active');
             
             const filterValue = this.getAttribute('data-filter');
+            
+            // Special effect for cricket filter
+            if (filterValue === 'cricket') {
+                document.querySelectorAll('.cricket-project-img').forEach(img => {
+                    img.style.animation = 'pulse 1s ease';
+                });
+            }
             
             // Filter projects
             projectCards.forEach(card => {
