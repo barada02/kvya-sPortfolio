@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavya Vemuri - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">VK</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span>Kavya Vemuri</span></h1>
+                <h2>Front-End Developer & Data Scientist</h2>
+                <p>Passionate about creating beautiful web experiences and extracting insights from data</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate technologist with a Master's in Computer Applications (MCA) who loves to explore the realms of front-end development, data science, and machine learning.</p>
+                    <p>My goal is to create seamless digital experiences that not only look beautiful but also incorporate intelligent data-driven solutions.</p>
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div class="edu-card">
+                            <h4>Master of Computer Applications (MCA)</h4>
+                            <p>Focused on advanced computing concepts, software development, and data analysis techniques</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-pic">
+                    <div class="img-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Front-End Development</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS3</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-react"></i>
+                            <h4>React</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Science & ML</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <i class="fab fa-python"></i>
+                            <h4>Python</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database"></i>
+                            <h4>SQL</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-chart-bar"></i>
+                            <h4>Data Analysis</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-brain"></i>
+                            <h4>Machine Learning</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="datascience">Data Science</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+            </div>
+            <div class="project-grid">
+                <!-- Frontend Projects -->
+                <div class="project-card" data-category="frontend">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Responsive E-commerce Platform</h3>
+                        <p>A modern responsive e-commerce site with cart functionality and product filtering</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="#" class="btn btn-small">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="frontend">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive Dashboard UI</h3>
+                        <p>A feature-rich dashboard with interactive charts and responsive design</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>CSS</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <a href="#" class="btn btn-small">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Data Science Projects -->
+                <div class="project-card" data-category="datascience">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Visualization Dashboard</h3>
+                        <p>Interactive data visualization platform for exploring complex datasets</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>D3.js</span>
+                            <span>Pandas</span>
+                        </div>
+                        <a href="#" class="btn btn-small">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="datascience">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Insights Analysis</h3>
+                        <p>Analysis of customer behavior patterns to drive business decisions</p>
+                        <div class="project-tags">
+                            <span>SQL</span>
+                            <span>Python</span>
+                            <span>Tableau</span>
+                        </div>
+                        <a href="#" class="btn btn-small">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- ML Projects -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Image Recognition System</h3>
+                        <p>Neural network-based system for classifying images with high accuracy</p>
+                        <div class="project-tags">
+                            <span>TensorFlow</span>
+                            <span>Python</span>
+                            <span>CNN</span>
+                        </div>
+                        <a href="#" class="btn btn-small">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ml">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Predictive Analytics Model</h3>
+                        <p>Machine learning model for predicting customer churn with high precision</p>
+                        <div class="project-tags">
+                            <span>Scikit-learn</span>
+                            <span>Python</span>
+                            <span>Statistical Analysis</span>
+                        </div>
+                        <a href="#" class="btn btn-small">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>kavya.vemuri@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kavya Vemuri. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
